@@ -26,3 +26,7 @@ I
 function drawStairs(n) {
     return n < 1 ? "I" : "I".repeat(n).split('').map((a, index) => " ".repeat(index) + a).join("\n")
 }
+
+// best answer
+
+const drawStairs = n => [...Array(n)].map((_, i) => " ".repeat(i) + "I").join("\n");
